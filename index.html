@@ -1,303 +1,226 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Arsenal Anime — +45,000 Diseños HD Para Sublimadores</title>
+    <title>El Arsenal Anime — 45,000 Diseños HD Para Vender Más Hoy</title>
 
-    <!-- PRECARGA RECURSOS CRITICOS -->
-    <link rel="preload" as="image"
-        href="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/Camisetas3mod_t79kiq.jpg"
-        fetchpriority="high">
+    <link rel="preload" as="image" href="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/Camisetas3mod_t79kiq.jpg" fetchpriority="high">
     <link rel="preconnect" href="https://res.cloudinary.com">
     <link rel="preconnect" href="https://d1yei2z3i6k35z.cloudfront.net">
 
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel -->
     <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = [];
-            setTimeout(function() {
-                t = b.createElement(e); t.async = !0;
-                t.src = v; s = b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t, s);
-            }, 3000);
-        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1406880024051799');
-        fbq('track', 'PageView');
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];setTimeout(function(){t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)},3000)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init','1406880024051799');fbq('track','PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=1406880024051799&ev=PageView&noscript=1" /></noscript>
 
-    <!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"></noscript>
-
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"></noscript>
 
     <style>
-        /* =============================================
-           DESIGN SYSTEM — PALETA EDITORIAL
-           Negro profundo + Blanco + Naranja fuego
-        ============================================= */
+        /* ============================================
+           DESIGN SYSTEM
+        ============================================ */
         :root {
-            --bg:        #0a0a0a;
-            --bg-card:   #111111;
-            --bg-raised: #181818;
-            --border:    #2a2a2a;
-            --border-light: #333333;
-            --text:      #f0f0f0;
-            --text-muted:#8a8a8a;
-            --text-dim:  #555555;
-            --orange:    #FF5500;
-            --orange-hot:#FF7A00;
-            --orange-glow: rgba(255, 85, 0, 0.25);
-            --white:     #ffffff;
-            --red-alert: #E53E3E;
+            --bg:           #080808;
+            --bg-card:      #0f0f0f;
+            --bg-raised:    #161616;
+            --border:       #222222;
+            --border-hi:    #333333;
+            --text:         #efefef;
+            --muted:        #888888;
+            --dim:          #444444;
+            --orange:       #FF4800;
+            --orange-2:     #FF7200;
+            --orange-glow:  rgba(255,72,0,0.22);
+            --green:        #22C55E;
+            --red:          #EF4444;
+            --gold:         #F59E0B;
+            --white:        #ffffff;
         }
 
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
         html { font-size: 16px; scroll-behavior: smooth; }
-
         body {
-            background-color: var(--bg);
+            background: var(--bg);
             color: var(--text);
-            font-family: 'DM Sans', sans-serif;
+            font-family: 'Inter', sans-serif;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
         }
 
-        /* TIPOGRAFÍA */
-        .font-display {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-weight: 900;
+        /* ── TIPOGRAFÍA ── */
+        .display {
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 0.02em;
+            line-height: 0.92;
+        }
+        .heading {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: -0.01em;
-            line-height: 0.95;
+            letter-spacing: 0.01em;
+            line-height: 1;
         }
 
-        /* UTILIDADES */
-        .max-w-5xl { max-width: 64rem; margin-left: auto; margin-right: auto; }
-        .max-w-4xl { max-width: 56rem; margin-left: auto; margin-right: auto; }
-        .max-w-3xl { max-width: 48rem; margin-left: auto; margin-right: auto; }
-        .max-w-2xl { max-width: 40rem; margin-left: auto; margin-right: auto; }
-        .max-w-xl  { max-width: 36rem; margin-left: auto; margin-right: auto; }
-        .px-4 { padding-left: 1rem; padding-right: 1rem; }
-        .text-center { text-align: center; }
-
-        /* GRADIENTE NARANJA */
-        .text-orange {
-            background: linear-gradient(135deg, var(--orange), var(--orange-hot));
+        /* ── GRADIENTES ── */
+        .grad-orange {
+            background: linear-gradient(110deg, var(--orange), var(--orange-2));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
+        .grad-bg-orange {
+            background: linear-gradient(110deg, var(--orange), var(--orange-2));
+        }
 
-        /* PILL LABEL */
+        /* ── LAYOUT ── */
+        .container  { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; }
+        .container-md { max-width: 56rem; margin: 0 auto; padding: 0 1.25rem; }
+        .container-sm { max-width: 40rem; margin: 0 auto; padding: 0 1.25rem; }
+
+        /* ── BOTÓN CTA ── */
+        .cta {
+            display: block;
+            width: 100%;
+            padding: 1.2rem 2rem;
+            background: linear-gradient(110deg, var(--orange), var(--orange-2));
+            color: #fff;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            border: none;
+            border-radius: 0.625rem;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.15s, box-shadow 0.15s;
+            animation: ctaGlow 2.4s ease-in-out infinite;
+        }
+        .cta::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(110deg, rgba(255,255,255,0.14) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .cta:hover { transform: translateY(-2px); box-shadow: 0 16px 48px rgba(255,72,0,0.55); }
+        .cta:active { transform: translateY(0); }
+
+        /* ── PILL ── */
         .pill {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.35rem 1rem;
+            padding: 0.3rem 0.9rem;
             border-radius: 999px;
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             font-weight: 700;
-            letter-spacing: 0.12em;
+            letter-spacing: 0.14em;
             text-transform: uppercase;
-            border: 1px solid var(--border-light);
+            border: 1px solid var(--border-hi);
             background: var(--bg-card);
-            color: var(--text-muted);
+            color: var(--muted);
         }
-        .pill .dot {
+        .pill-dot {
             width: 7px; height: 7px;
             border-radius: 50%;
             background: var(--orange);
-            animation: pulseOrb 1.5s ease-in-out infinite;
+            animation: pulse 1.6s ease-in-out infinite;
         }
 
-        /* BOTÓN CTA PRINCIPAL */
-        .btn-cta {
-            display: block;
-            width: 100%;
-            padding: 1.25rem 2rem;
-            background: var(--orange);
-            color: #fff;
-            font-family: 'Barlow Condensed', sans-serif;
-            font-weight: 900;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-            border: none;
-            border-radius: 0.75rem;
-            cursor: pointer;
-            transition: transform 0.15s ease, box-shadow 0.15s ease;
-            animation: ctaPulse 2.5s ease-in-out infinite;
-            text-align: center;
-            text-decoration: none;
-        }
-        .btn-cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 40px rgba(255, 85, 0, 0.5);
-        }
-        .btn-cta:active { transform: translateY(0); }
-
-        /* CARD */
+        /* ── CARD ── */
         .card {
             background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 1rem;
             padding: 1.5rem;
-            transition: border-color 0.2s ease;
+            transition: border-color 0.2s;
         }
-        .card:hover { border-color: var(--border-light); }
+        .card:hover { border-color: var(--border-hi); }
 
-        /* DIVISOR */
-        .divider {
-            width: 100%;
-            height: 1px;
-            background: var(--border);
-        }
+        /* ── SEPARADORES ── */
+        .section { padding: 5.5rem 0; }
+        .section-alt { background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .divider { width: 100%; height: 1px; background: var(--border); }
+        .accent-bar { width: 44px; height: 4px; border-radius: 2px; background: var(--orange); margin: 1rem auto; }
 
-        /* FAQ */
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
-            opacity: 0;
-        }
-        .faq-item.active .faq-answer {
-            max-height: 300px;
-            opacity: 1;
-            padding-bottom: 1.25rem;
-        }
-        .faq-item.active .faq-icon { transform: rotate(180deg); color: var(--orange); }
-        .faq-icon { transition: transform 0.3s ease, color 0.2s ease; }
-
-        /* CARRUSEL */
-        .c-slide {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: opacity 0.7s ease, transform 0.7s ease;
+        /* ── GRIDS ── */
+        .grid-2 { display: grid; gap: 2.5rem; grid-template-columns: 1fr; }
+        .grid-3 { display: grid; gap: 1.25rem; grid-template-columns: 1fr; }
+        @media(min-width:768px) {
+            .grid-2 { grid-template-columns: 1fr 1fr; align-items: center; }
+            .grid-3 { grid-template-columns: repeat(3, 1fr); }
+            .cta { font-size: 1.6rem; }
         }
 
-        /* STAT NUMBERS */
-        .stat-num {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-weight: 900;
-            font-size: clamp(2.5rem, 6vw, 4rem);
-            line-height: 1;
-            color: var(--white);
-        }
-        .stat-label {
+        /* ── TOPBAR ── */
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: var(--red);
+            color: #fff;
+            text-align: center;
+            padding: 0.55rem 1rem;
             font-size: 0.7rem;
             font-weight: 700;
             letter-spacing: 0.12em;
             text-transform: uppercase;
-            color: var(--orange);
-            margin-top: 0.35rem;
         }
-
-        /* CHECKMARK ITEM */
-        .check-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.875rem;
-        }
-        .check-icon {
-            width: 22px; height: 22px;
-            border-radius: 50%;
-            background: rgba(255, 85, 0, 0.15);
-            border: 1px solid var(--orange);
-            color: var(--orange);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            font-weight: 900;
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        /* GRID RESPONSIVE */
-        .grid-3 {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1rem;
-        }
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-        }
-        .grid-4 {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-        }
-
-        @media (min-width: 768px) {
-            .grid-3 { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-            .grid-2 { grid-template-columns: 1fr 1fr; align-items: center; }
-            .grid-4 { grid-template-columns: repeat(4, 1fr); }
-            .md-hide { display: none; }
-            .md-show { display: block; }
-            .btn-cta { font-size: 1.75rem; }
-        }
-
-        /* STICKY TOP BAR */
-        .top-bar {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background: var(--red-alert);
-            color: #fff;
-            text-align: center;
-            padding: 0.6rem 1rem;
-            font-size: 0.72rem;
+        .topbar-timer {
+            display: inline-block;
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.9rem;
             font-weight: 700;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
+            background: rgba(0,0,0,0.3);
+            padding: 0.05rem 0.5rem;
+            border-radius: 4px;
+            margin-left: 0.4rem;
+            letter-spacing: 0.08em;
         }
 
-        /* SECCIÓN HERO */
+        /* ── HERO ── */
         .hero {
-            padding: 4rem 1rem 5rem;
+            padding: 4.5rem 0 5.5rem;
             position: relative;
             overflow: hidden;
+            text-align: center;
         }
-        .hero::before {
-            content: '';
+        .hero-glow {
             position: absolute;
-            top: -200px;
+            top: -120px;
             left: 50%;
             transform: translateX(-50%);
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(255,85,0,0.06) 0%, transparent 70%);
+            width: 700px;
+            height: 500px;
+            background: radial-gradient(ellipse, rgba(255,72,0,0.08) 0%, transparent 68%);
             pointer-events: none;
         }
+        .hero-title {
+            font-size: clamp(3.2rem, 11vw, 8rem);
+        }
+        .hero-sub {
+            font-size: clamp(1rem, 2.4vw, 1.25rem);
+            color: #c0c0c0;
+            line-height: 1.65;
+            max-width: 36rem;
+            margin: 0 auto;
+        }
 
-        /* SECCIÓN ALTERNADA */
-        .section { padding: 5rem 1rem; }
-        .section-dark { background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-
-        /* VIDEO */
+        /* ── VIDEO ── */
         .video-wrap {
             position: relative;
             border-radius: 1rem;
             overflow: hidden;
-            border: 1px solid var(--border-light);
+            border: 1px solid var(--border-hi);
             background: var(--bg-card);
         }
         .video-badge {
@@ -305,20 +228,46 @@
             top: 0.875rem;
             right: 0.875rem;
             z-index: 20;
-            padding: 0.3rem 0.75rem;
-            background: rgba(0,0,0,0.8);
-            border: 1px solid var(--border-light);
+            padding: 0.3rem 0.8rem;
+            background: rgba(0,0,0,0.85);
+            border: 1px solid var(--border-hi);
             border-radius: 999px;
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             font-weight: 700;
             color: var(--text);
             display: flex;
             align-items: center;
             gap: 0.4rem;
         }
-        .video-badge .star { color: #F6C90E; }
 
-        /* PROBLEMA */
+        /* ── CARRUSEL ── */
+        .c-slide {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.65s ease, transform 0.65s ease;
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 30;
+            width: 38px; height: 38px;
+            border-radius: 50%;
+            background: rgba(0,0,0,0.75);
+            border: 1px solid var(--border-hi);
+            color: #fff;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .carousel-btn:hover { background: var(--orange); }
+        .carousel-btn-left { left: 0.875rem; }
+        .carousel-btn-right { right: 0.875rem; }
+
+        /* ── PROBLEMA ── */
         .problem-card {
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -326,31 +275,100 @@
             padding: 1.5rem;
             transition: border-color 0.2s;
         }
-        .problem-card:hover { border-color: rgba(229, 62, 62, 0.4); }
+        .problem-card:hover { border-color: rgba(239,68,68,0.35); }
         .problem-icon {
-            width: 48px; height: 48px;
+            width: 46px; height: 46px;
             border-radius: 50%;
-            background: rgba(229, 62, 62, 0.08);
+            background: rgba(239,68,68,0.08);
             display: flex; align-items: center; justify-content: center;
-            font-size: 1.4rem;
+            font-size: 1.35rem;
             margin-bottom: 1rem;
         }
 
-        /* FEATURE ROW */
+        /* ── FEATURE ROWS ── */
         .feature-row {
             display: flex;
             align-items: flex-start;
-            gap: 1rem;
-            padding: 1.25rem;
+            gap: 1.1rem;
+            padding: 1.2rem;
             border-radius: 0.875rem;
             background: var(--bg-card);
             border: 1px solid var(--border);
             transition: border-color 0.2s;
         }
-        .feature-row:hover { border-color: var(--border-light); }
-        .feature-emoji { font-size: 1.75rem; flex-shrink: 0; margin-top: 0.1rem; }
+        .feature-row:hover { border-color: var(--border-hi); }
+        .feature-emoji { font-size: 1.6rem; flex-shrink: 0; margin-top: 0.1rem; }
 
-        /* OFERTA BOX */
+        /* ── STATS ── */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            text-align: center;
+        }
+        @media(min-width:768px) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
+        .stat-num {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.8rem, 6vw, 4.5rem);
+            line-height: 1;
+            color: var(--white);
+            letter-spacing: 0.02em;
+        }
+        .stat-label {
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--orange);
+            margin-top: 0.3rem;
+        }
+
+        /* ── TESTIMONIOS ── */
+        .testi-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: border-color 0.2s;
+            position: relative;
+        }
+        .testi-card:hover { border-color: var(--border-hi); }
+        .testi-quote {
+            position: absolute;
+            top: 1rem;
+            right: 1.25rem;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            line-height: 1;
+            color: var(--orange);
+            opacity: 0.18;
+        }
+        .testi-stars { color: var(--gold); font-size: 0.875rem; letter-spacing: 0.05em; margin-bottom: 0.875rem; }
+        .testi-avatar {
+            width: 42px; height: 42px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 800;
+            font-size: 1rem;
+            color: #fff;
+            flex-shrink: 0;
+        }
+        /* Nota de prueba social */
+        .social-proof-note {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--muted);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+        }
+        .social-proof-note .live-dot { background: var(--green); }
+
+        /* ── OFERTA BOX ── */
         .offer-box {
             background: var(--bg-card);
             border: 2px solid var(--orange);
@@ -358,410 +376,302 @@
             padding: 2.5rem;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 0 60px rgba(255, 85, 0, 0.12);
+            box-shadow: 0 0 80px rgba(255,72,0,0.1);
         }
         .offer-ribbon {
             position: absolute;
             top: 0; left: 0;
             width: 100%;
-            background: var(--orange);
+            background: linear-gradient(110deg, var(--orange), var(--orange-2));
             color: #fff;
             text-align: center;
             padding: 0.6rem;
-            font-size: 0.72rem;
+            font-size: 0.7rem;
             font-weight: 800;
-            letter-spacing: 0.12em;
+            letter-spacing: 0.14em;
             text-transform: uppercase;
         }
 
-        /* TESTIMONIAL */
-        .testi-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 1rem;
-            padding: 1.5rem;
-            transition: border-color 0.2s;
+        /* ── PRECIO ── */
+        .price-old {
+            font-size: 1.1rem;
+            color: var(--dim);
+            text-decoration: line-through;
+            font-weight: 600;
         }
-        .testi-card:hover { border-color: var(--border-light); }
-        .testi-stars { color: #F6C90E; font-size: 0.875rem; letter-spacing: 0.1em; margin-bottom: 0.875rem; }
-        .testi-avatar {
-            width: 40px; height: 40px;
-            border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-weight: 800;
-            font-size: 0.875rem;
-            color: #fff;
+        .price-new {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(4.5rem, 14vw, 8rem);
+            line-height: 1;
+            color: var(--white);
+            letter-spacing: 0.02em;
+        }
+        .price-dollar {
+            font-size: 0.42em;
+            vertical-align: super;
+            color: var(--orange);
         }
 
-        /* WHY CHEAP SECTION */
+        /* ── VALUE LIST ── */
+        .value-list { list-style: none; display: flex; flex-direction: column; gap: 0.875rem; text-align: left; max-width: 28rem; margin: 0 auto 2rem; }
+        .value-list li { display: flex; align-items: center; gap: 0.875rem; color: #d0d0d0; font-size: 0.95rem; }
+        .tick { color: var(--orange); font-size: 1.1rem; font-weight: 900; flex-shrink: 0; }
+
+        /* ── URGENCIA ── */
         .why-cheap {
             background: var(--bg-raised);
             border: 1px solid var(--border);
             border-left: 3px solid var(--orange);
             border-radius: 0.875rem;
-            padding: 1.5rem;
+            padding: 1.25rem 1.5rem;
         }
-
-        /* PRECIO */
-        .price-tag {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-weight: 900;
-            font-size: clamp(4rem, 12vw, 7rem);
-            line-height: 1;
-            color: var(--white);
-        }
-        .price-dollar {
-            font-size: 0.45em;
-            vertical-align: super;
+        .cheap-tag {
+            display: inline-block;
+            padding: 0.2rem 0.65rem;
+            background: rgba(255,72,0,0.1);
+            border: 1px solid rgba(255,72,0,0.3);
+            border-radius: 4px;
             color: var(--orange);
+            font-size: 0.68rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
         }
-
-        /* URGENCIA FINAL */
-        .final-urgency {
-            background: #0a0a0a;
-            border-top: 1px solid var(--border);
-            padding: 4rem 1rem;
-        }
-        .final-timer {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-weight: 900;
-            font-size: clamp(4rem, 15vw, 6rem);
-            background: linear-gradient(135deg, var(--red-alert), #FF8C00);
+        .countdown-timer {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.8rem, 10vw, 4.5rem);
+            background: linear-gradient(110deg, var(--red), #FF8C00);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            letter-spacing: 0.04em;
+            letter-spacing: 0.06em;
             line-height: 1;
         }
 
-        /* FOOTER */
-        footer {
-            background: #050505;
+        /* ── FINAL URGENCY ── */
+        .final-urgency {
+            background: #060606;
             border-top: 1px solid var(--border);
-            padding: 2rem 1rem;
+            padding: 5rem 0;
             text-align: center;
-            color: var(--text-dim);
-            font-size: 0.75rem;
-            line-height: 1.8;
         }
+        .final-title { font-size: clamp(2.2rem, 6vw, 4rem); }
 
-        /* SECURITY BADGES */
+        /* ── SECURITY ROW ── */
         .security-row {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
-            color: var(--text-muted);
-            font-size: 0.8rem;
+            color: var(--muted);
+            font-size: 0.78rem;
             margin-top: 1rem;
         }
-        .security-row svg { color: #48BB78; }
+        .security-row svg { color: var(--green); flex-shrink: 0; }
 
-        /* SCROLL ARROW */
-        .scroll-arrow {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-            margin-top: 2.5rem;
-            color: var(--text-dim);
-            font-size: 0.7rem;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            animation: bounceDown 2s ease-in-out infinite;
-        }
+        /* ── FAQ ── */
+        .faq-wrap { display: flex; flex-direction: column; gap: 0.75rem; }
+        .faq-item { border: 1px solid var(--border); background: var(--bg-card); border-radius: 0.875rem; overflow: hidden; transition: border-color 0.2s; }
+        .faq-item.active { border-color: var(--border-hi); }
+        .faq-btn { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 1.25rem; background: none; border: none; color: var(--text); font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.9rem; text-align: left; cursor: pointer; transition: color 0.2s; gap: 0.75rem; }
+        .faq-btn:hover { color: var(--orange); }
+        .faq-icon { transition: transform 0.3s, color 0.2s; flex-shrink: 0; }
+        .faq-item.active .faq-icon { transform: rotate(180deg); color: var(--orange); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s; opacity: 0; }
+        .faq-item.active .faq-answer { max-height: 320px; opacity: 1; padding-bottom: 1.25rem; }
+        .faq-answer-inner { padding: 0 1.25rem; color: var(--muted); font-size: 0.875rem; line-height: 1.75; }
 
-        /* =============================================
-           ANIMACIONES
-        ============================================= */
-        @keyframes pulseOrb {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50%       { opacity: 0.6; transform: scale(0.85); }
-        }
-        @keyframes ctaPulse {
-            0%, 100% { box-shadow: 0 6px 30px rgba(255, 85, 0, 0.35); }
-            50%       { box-shadow: 0 10px 50px rgba(255, 85, 0, 0.65); }
-        }
-        @keyframes bounceDown {
-            0%, 100% { transform: translateY(0); }
-            50%       { transform: translateY(6px); }
-        }
-        @keyframes fadeSlideUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
+        /* ── CHECKMARKS ── */
+        .check-item { display: flex; align-items: flex-start; gap: 0.875rem; }
+        .check-icon { width: 22px; height: 22px; border-radius: 50%; background: rgba(255,72,0,0.12); border: 1px solid var(--orange); color: var(--orange); display: flex; align-items: center; justify-content: center; font-size: 0.68rem; font-weight: 900; flex-shrink: 0; margin-top: 2px; }
 
-        /* NOISE TEXTURE OVERLAY */
+        /* ── STORY BLOCK ── */
+        .story-block {
+            background: var(--bg-raised);
+            border-left: 3px solid var(--red);
+            border-radius: 0 0.75rem 0.75rem 0;
+            padding: 1.25rem 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.75;
+            color: #bebebe;
+        }
+        .story-block strong { color: #fff; }
+
+        /* ── SCROLL ARROW ── */
+        .scroll-arrow { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; margin-top: 2.5rem; color: var(--dim); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; animation: bounceDown 2.2s ease-in-out infinite; }
+
+        /* ── LIVE DOT ── */
+        .live-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--green); animation: pulse 1.6s ease-in-out infinite; flex-shrink: 0; }
+
+        /* ── FOOTER ── */
+        footer { background: #040404; border-top: 1px solid var(--border); padding: 2.5rem 1.25rem; text-align: center; color: var(--dim); font-size: 0.75rem; line-height: 1.8; }
+
+        /* ── UTILS ── */
+        .text-center { text-align: center; }
+        .mb-1 { margin-bottom: 0.25rem; } .mb-2 { margin-bottom: 0.5rem; } .mb-3 { margin-bottom: 0.75rem; }
+        .mb-4 { margin-bottom: 1rem; } .mb-6 { margin-bottom: 1.5rem; } .mb-8 { margin-bottom: 2rem; }
+        .mb-10 { margin-bottom: 2.5rem; } .mb-12 { margin-bottom: 3rem; }
+        .mt-2 { margin-top: 0.5rem; } .mt-4 { margin-top: 1rem; } .mt-6 { margin-top: 1.5rem; }
+        .mt-8 { margin-top: 2rem; }
+        .flex { display: flex; align-items: center; }
+        .gap-2 { gap: 0.5rem; } .gap-3 { gap: 0.75rem; } .gap-4 { gap: 1rem; }
+        .space-y-3 > * + * { margin-top: 0.75rem; }
+        .space-y-4 > * + * { margin-top: 1rem; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .italic { font-style: italic; }
+        .uppercase { text-transform: uppercase; }
+        .font-bold { font-weight: 700; }
+        .font-black { font-weight: 900; }
+        .text-xs { font-size: 0.75rem; }
+        .text-sm { font-size: 0.875rem; }
+        .text-white { color: #fff; }
+        .text-muted { color: var(--muted); }
+        .text-dim { color: var(--dim); }
+        .text-orange { color: var(--orange); }
+        .text-green { color: var(--green); }
+        .text-red { color: var(--red); }
+        .leading-relaxed { line-height: 1.7; }
+        .relative { position: relative; }
+        .overflow-hidden { overflow: hidden; }
+        .w-full { width: 100%; }
+        .block { display: block; }
+
+        /* ── NOISE OVERLAY ── */
         body::after {
             content: '';
             position: fixed;
             inset: 0;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
-            opacity: 0.022;
+            opacity: 0.018;
             pointer-events: none;
             z-index: 9999;
         }
 
-        /* CARRUSEL CONTROLES */
-        .carousel-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 30;
-            width: 36px; height: 36px;
-            border-radius: 50%;
-            background: rgba(0,0,0,0.7);
-            border: 1px solid var(--border-light);
-            color: #fff;
-            display: flex; align-items: center; justify-content: center;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .carousel-btn:hover { background: var(--orange); }
-        .carousel-btn-left  { left: 0.875rem; }
-        .carousel-btn-right { right: 0.875rem; }
+        /* ── ANIMATIONS ── */
+        @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.55;transform:scale(0.82)} }
+        @keyframes ctaGlow { 0%,100%{box-shadow:0 6px 28px rgba(255,72,0,0.32)} 50%{box-shadow:0 10px 52px rgba(255,72,0,0.62)} }
+        @keyframes bounceDown { 0%,100%{transform:translateY(0)} 50%{transform:translateY(7px)} }
+        @keyframes fadeUp { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
+        @keyframes slideIn { from{opacity:0;transform:translateX(-18px)} to{opacity:1;transform:translateX(0)} }
 
-        /* INLINE FLEX UTILS */
-        .inline-flex { display: inline-flex; align-items: center; }
-        .flex { display: flex; align-items: center; }
-        .flex-col { flex-direction: column; }
-        .items-start { align-items: flex-start; }
-        .gap-2 { gap: 0.5rem; }
-        .gap-3 { gap: 0.75rem; }
-        .gap-4 { gap: 1rem; }
-        .gap-6 { gap: 1.5rem; }
-        .gap-8 { gap: 2rem; }
-        .mb-1 { margin-bottom: 0.25rem; }
-        .mb-2 { margin-bottom: 0.5rem; }
-        .mb-3 { margin-bottom: 0.75rem; }
-        .mb-4 { margin-bottom: 1rem; }
-        .mb-6 { margin-bottom: 1.5rem; }
-        .mb-8 { margin-bottom: 2rem; }
-        .mb-10 { margin-bottom: 2.5rem; }
-        .mb-12 { margin-bottom: 3rem; }
-        .mt-2 { margin-top: 0.5rem; }
-        .mt-4 { margin-top: 1rem; }
-        .mt-6 { margin-top: 1.5rem; }
-        .mt-8 { margin-top: 2rem; }
-        .mt-10 { margin-top: 2.5rem; }
-        .w-full { width: 100%; }
-        .block { display: block; }
-        .relative { position: relative; }
-        .overflow-hidden { overflow: hidden; }
+        /* ── ENTRADA ANIMADA ── */
+        .anim-fade-up { animation: fadeUp 0.7s ease both; }
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.45s; }
 
-        /* SEPARADOR VISUAL */
-        .orange-bar {
-            width: 48px; height: 4px;
-            background: var(--orange);
-            border-radius: 2px;
-            margin: 1rem auto;
-        }
+        /* ── SCROLL REVEAL ── */
+        [data-reveal] { opacity: 0; transform: translateY(20px); transition: opacity 0.65s ease, transform 0.65s ease; }
+        [data-reveal].visible { opacity: 1; transform: translateY(0); }
+        [data-reveal-left] { opacity: 0; transform: translateX(-20px); transition: opacity 0.65s ease, transform 0.65s ease; }
+        [data-reveal-left].visible { opacity: 1; transform: translateX(0); }
+        [data-reveal-right] { opacity: 0; transform: translateX(20px); transition: opacity 0.65s ease, transform 0.65s ease; }
+        [data-reveal-right].visible { opacity: 1; transform: translateX(0); }
 
-        /* VALUE LIST */
-        .value-list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 0.875rem;
-            text-align: left;
-            max-width: 28rem;
-            margin: 0 auto 2rem;
-        }
-        .value-list li {
-            display: flex;
+        /* ── NUMERO VENTAS REAL ── */
+        .sales-counter {
+            display: inline-flex;
             align-items: center;
-            gap: 0.875rem;
-            color: #d0d0d0;
-            font-size: 0.95rem;
-        }
-        .value-list li span.tick {
-            color: var(--orange);
-            font-size: 1.1rem;
-            font-weight: 900;
-            flex-shrink: 0;
-        }
-
-        /* FAQ */
-        .faq-wrap { display: flex; flex-direction: column; gap: 0.75rem; }
-        .faq-item {
-            border: 1px solid var(--border);
-            background: var(--bg-card);
-            border-radius: 0.875rem;
-            overflow: hidden;
-            transition: border-color 0.2s;
-        }
-        .faq-item.active { border-color: var(--border-light); }
-        .faq-btn {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 1.1rem 1.25rem;
-            background: none;
-            border: none;
-            color: var(--text);
-            font-family: 'DM Sans', sans-serif;
+            gap: 0.6rem;
+            padding: 0.45rem 1rem;
+            border-radius: 999px;
+            background: rgba(34,197,94,0.08);
+            border: 1px solid rgba(34,197,94,0.25);
+            font-size: 0.78rem;
             font-weight: 700;
-            font-size: 0.9rem;
-            text-align: left;
-            cursor: pointer;
-            transition: color 0.2s;
-        }
-        .faq-btn:hover { color: var(--orange); }
-        .faq-answer { padding: 0 1.25rem; color: var(--text-muted); font-size: 0.875rem; line-height: 1.7; }
-
-        /* WHY SO CHEAP */
-        .cheap-label {
-            display: inline-block;
-            padding: 0.2rem 0.7rem;
-            background: rgba(255,85,0,0.12);
-            border: 1px solid rgba(255,85,0,0.3);
-            border-radius: 4px;
-            color: var(--orange);
-            font-size: 0.72rem;
-            font-weight: 800;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            margin-bottom: 0.75rem;
+            color: var(--green);
+            letter-spacing: 0.05em;
         }
 
-        /* STRIKETHROUGH */
-        .strike {
-            text-decoration: line-through;
-            color: var(--text-dim);
-            font-size: 0.9em;
-        }
-
-        /* LIVE DOT */
-        .live-dot {
-            display: inline-block;
-            width: 8px; height: 8px;
-            border-radius: 50%;
-            background: #48BB78;
-            animation: pulseOrb 1.5s ease-in-out infinite;
-            flex-shrink: 0;
-        }
-
-        /* HEADLINE SIZE HELPERS */
-        .text-hero {
-            font-size: clamp(2.8rem, 9vw, 6.5rem);
-        }
-        .text-h2 {
-            font-size: clamp(2rem, 5vw, 3.5rem);
-        }
-        .text-h3 {
-            font-size: clamp(1.6rem, 3.5vw, 2.5rem);
-        }
-        .text-body { font-size: 1rem; line-height: 1.7; color: var(--text-muted); }
-        .text-sm { font-size: 0.875rem; }
-        .text-xs { font-size: 0.75rem; }
-        .text-muted { color: var(--text-muted); }
-        .text-dim { color: var(--text-dim); }
-        .text-white { color: #fff; }
-        .text-orange-c { color: var(--orange); }
-        .text-red { color: var(--red-alert); }
-        .font-bold { font-weight: 700; }
-        .font-black { font-weight: 900; }
-        .italic { font-style: italic; }
-        .uppercase { text-transform: uppercase; }
-        .tracking-wide { letter-spacing: 0.08em; }
-
-        /* HELPER */
-        .space-y-4 > * + * { margin-top: 1rem; }
-        .space-y-3 > * + * { margin-top: 0.75rem; }
-        .mx-auto { margin-left: auto; margin-right: auto; }
-        .leading-relaxed { line-height: 1.7; }
-        .shrink-0 { flex-shrink: 0; }
-
-        /* STARS */
-        .stars { color: #F6C90E; letter-spacing: 0.05em; }
-
-        /* PROBLEM STORY  */
-        .story-block {
-            background: var(--bg-raised);
-            border-left: 3px solid var(--red-alert);
-            border-radius: 0 0.75rem 0.75rem 0;
+        /* ── GARANTIA ── */
+        .guarantee-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
             padding: 1.25rem 1.5rem;
-            margin-bottom: 0;
-            font-size: 0.95rem;
-            line-height: 1.75;
-            color: #c0c0c0;
+            border-radius: 0.875rem;
+            background: rgba(34,197,94,0.05);
+            border: 1px solid rgba(34,197,94,0.2);
+            margin-top: 1.5rem;
         }
-        .story-block strong { color: #fff; }
+        .guarantee-icon { font-size: 2.2rem; flex-shrink: 0; }
 
-        /* GRID STATS */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
+        /* ── HORIZONTAL RULE FANCY ── */
+        .hr-fancy {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 3rem 0;
+        }
+        .hr-fancy::before, .hr-fancy::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+        .hr-fancy span { color: var(--dim); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; white-space: nowrap; }
+
+        /* Urgencia countdown box */
+        .countdown-box {
+            background: rgba(239,68,68,0.06);
+            border: 1px solid rgba(239,68,68,0.2);
+            border-radius: 0.875rem;
+            padding: 1.25rem;
             text-align: center;
+            margin-bottom: 1.5rem;
         }
-        @media(min-width:768px) {
-            .stats-grid { grid-template-columns: repeat(4, 1fr); }
-        }
-
-        /* FINAL SECTION ORANGE GLOW */
-        .final-urgency-inner {
-            max-width: 40rem;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        /* Hover effect on feature rows */
-        .feature-row { cursor: default; }
     </style>
 </head>
-
 <body>
 
-    <!-- ▌ BARRA SUPERIOR STICKY -->
-    <div class="top-bar">
-        <span style="animation: pulseOrb 1s infinite; display:inline-block; margin-right:0.4rem">⚠</span>
-        ATENCIÓN: Esta oferta y el precio de $4.95 desaparecen cuando el contador llegue a cero
-        <span style="animation: pulseOrb 1s infinite; display:inline-block; margin-left:0.4rem">⚠</span>
+    <!-- ▌ BARRA STICKY -->
+    <div class="topbar">
+        ⚡ Precio de lanzamiento — Solo quedan <span id="units-left">47</span> accesos a este precio &nbsp;·&nbsp; Tiempo: <span class="topbar-timer" id="topbar-timer">—</span>
     </div>
 
-    <!-- ▌ SECCIÓN 1 — HERO / GANCHO -->
+    <!-- ▌ HERO -->
     <header class="hero">
-        <div class="max-w-4xl">
+        <div class="hero-glow"></div>
+        <div class="container-md">
 
-            <!-- PILL LABEL -->
-            <div class="text-center mb-6" data-aos="fade-down">
+            <div class="text-center mb-6 anim-fade-up">
                 <span class="pill">
-                    <span class="dot"></span>
-                    Para Sublimadores &amp; Estampadores
+                    <span class="pill-dot"></span>
+                    Para Sublimadores &amp; Estampadores Hispanos
                 </span>
             </div>
 
-            <!-- HEADLINE PRINCIPAL -->
-            <div class="text-center mb-6" data-aos="zoom-in" data-aos-delay="80">
-                <h1 class="font-display text-hero text-white">
-                    Deja de perder noches<br>
-                    borrando fondos en<br>
-                    <span class="text-orange">Photoshop.</span>
+            <!-- HEADLINE: enfoca en vender más, no en quitar fondos -->
+            <div class="text-center mb-5 anim-fade-up delay-1">
+                <h1 class="display hero-title text-white">
+                    Tu Competencia Ya<br>
+                    Vendió 50 Camisetas<br>
+                    <span class="grad-orange">Hoy. Tú No.</span>
                 </h1>
             </div>
 
-            <!-- SUBTÍTULO — LA LÍNEA SECRETA QUE ESTABA ENTERRADA -->
-            <div class="text-center mb-4" data-aos="fade-up" data-aos-delay="160">
-                <p style="font-size: clamp(1rem, 2.5vw, 1.3rem); color: #c8c8c8; max-width: 38rem; margin: 0 auto; line-height: 1.6; font-weight: 500;">
-                    El mismo catálogo que las grandes tiendas de merch del mundo usan en secreto para inundar el mercado —
-                    <strong style="color:#fff">ahora disponible para sublimadores independientes por primera vez.</strong>
+            <div class="text-center mb-4 anim-fade-up delay-2">
+                <p class="hero-sub">
+                    Con +45,000 diseños de anime HD listos para planchar, puedes pasar de cero a catálogo completo
+                    <strong style="color:#fff;">en menos de una hora</strong> — sin Photoshop, sin diseñadores, sin perder pedidos.
                 </p>
             </div>
 
-            <!-- MICRO-PRUEBA DEBAJO DEL SUBTÍTULO -->
-            <div class="text-center mb-10" data-aos="fade-up" data-aos-delay="200">
+            <div class="text-center mb-8 anim-fade-up delay-3">
                 <p class="text-sm text-muted italic">
-                    +45,000 diseños HD · Fondo transparente listo · Licencia comercial incluida · Entrega inmediata
+                    +45,000 PNGs Ultra HD · Fondo transparente listo · Licencia comercial · Acceso inmediato
                 </p>
+            </div>
+
+            <!-- CONTADOR DE VENTAS -->
+            <div class="text-center mb-8 anim-fade-up delay-4">
+                <span class="sales-counter">
+                    <span class="live-dot"></span>
+                    <span id="sales-count">1,847</span> sublimadores ya tienen acceso
+                </span>
             </div>
 
             <!-- VIDEO HERO -->
-            <div class="video-wrap mb-6" style="max-width:44rem; margin-left:auto; margin-right:auto; aspect-ratio:16/9;" data-aos="fade-up" data-aos-delay="240">
+            <div class="video-wrap anim-fade-up delay-4" style="max-width:44rem; margin:0 auto; aspect-ratio:16/9;">
                 <div class="video-badge">
-                    <span class="star">★</span> Calidad Real — Sin Píxeles
+                    <span style="color:var(--gold);">★</span> Calidad Real — Sin Píxeles
                 </div>
                 <video loop muted playsinline preload="none"
                     poster="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/Camisetas3mod_t79kiq.jpg"
@@ -771,134 +681,121 @@
                 </video>
             </div>
 
-            <!-- SCROLL ARROW -->
-            <div class="scroll-arrow">
-                <span>Descubre lo que hay adentro</span>
+            <div class="scroll-arrow mt-6">
+                <span>Ve lo que hay adentro</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
             </div>
 
         </div>
     </header>
 
-    <!-- ▌ SECCIÓN 2 — AGITACIÓN DEL PROBLEMA (con micro-historias) -->
-    <section class="section section-dark">
-        <div class="max-w-4xl px-4">
+    <!-- ▌ SECCIÓN 2 — PROBLEMA / AGITACIÓN -->
+    <section class="section section-alt">
+        <div class="container-md">
 
-            <div class="text-center mb-12" data-aos="fade-up">
-                <h2 class="font-display text-h2 text-white mb-3">
-                    La realidad que nadie<br>te cuenta sobre<br>
-                    <span class="text-red">conseguir diseños que vendan.</span>
+            <div class="text-center mb-12" data-reveal>
+                <h2 class="heading text-white mb-3" style="font-size:clamp(2rem,5vw,3.2rem);">
+                    Por qué la mayoría de sublimadores<br>
+                    <span class="text-red">no escalan sus ventas.</span>
                 </h2>
-                <div class="orange-bar"></div>
+                <div class="accent-bar"></div>
             </div>
 
             <div class="grid-3 mb-8">
 
-                <div class="problem-card" data-aos="fade-up" data-aos-delay="80">
-                    <div class="problem-icon">⏳</div>
-                    <h3 class="font-bold text-white mb-2" style="font-size:1.05rem;">Las 11pm de Photoshop</h3>
-                    <p class="text-body text-sm">
-                        Son las 11 de la noche. Llevas 2 horas intentando recortar el fondo de un Naruto
-                        que bajaste de Google. El cliente lo quiere mañana. El resultado final
-                        se ve como parche blanco sobre la tela. <strong style="color:#ddd">Tiemblas de frustración.</strong>
-                    </p>
-                </div>
-
-                <div class="problem-card" data-aos="fade-up" data-aos-delay="160">
-                    <div class="problem-icon">💸</div>
-                    <h3 class="font-bold text-white mb-2" style="font-size:1.05rem;">$20 por un solo diseño</h3>
-                    <p class="text-body text-sm">
-                        Contratas a un diseñador en Fiverr. Te cobra $15 o $20 por
-                        <em>un solo PNG</em>. Tarda 3 días. El margen de tu camiseta
-                        de $18 queda en cero. <strong style="color:#ddd">Empezaste a vender para perder plata.</strong>
-                    </p>
-                </div>
-
-                <div class="problem-card" data-aos="fade-up" data-aos-delay="240">
+                <div class="problem-card" data-reveal>
                     <div class="problem-icon">📉</div>
-                    <h3 class="font-bold text-white mb-2" style="font-size:1.05rem;">Tu competencia ya lanzó 50</h3>
-                    <p class="text-body text-sm">
-                        Mientras tú sigues varado buscando un vector en Pinterest,
-                        la tienda de al lado acaba de publicar 50 modelos nuevos y
-                        se está llevando a tus clientes. <strong style="color:#ddd">El mercado no espera.</strong>
+                    <h3 class="font-bold text-white mb-2" style="font-size:1.05rem;">Catálogo que no crece</h3>
+                    <p style="color:var(--muted);font-size:0.9rem;line-height:1.7;">
+                        El cliente pregunta por Demon Slayer. Tú no tienes ese diseño. Le dices "en unos días".
+                        Para entonces ya compró donde la competencia. <strong style="color:#ddd">Perdiste la venta y al cliente.</strong>
+                    </p>
+                </div>
+
+                <div class="problem-card" data-reveal>
+                    <div class="problem-icon">💸</div>
+                    <h3 class="font-bold text-white mb-2" style="font-size:1.05rem;">Margen que se evapora</h3>
+                    <p style="color:var(--muted);font-size:0.9rem;line-height:1.7;">
+                        Pagas $15–$20 por un solo PNG en Fiverr. Tu camiseta la vendes en $18.
+                        El negocio existe en papel, pero el dinero real se lo lleva el diseñador.
+                        <strong style="color:#ddd">Trabajas gratis para otros.</strong>
+                    </p>
+                </div>
+
+                <div class="problem-card" data-reveal>
+                    <div class="problem-icon">⏳</div>
+                    <h3 class="font-bold text-white mb-2" style="font-size:1.05rem;">Horas perdidas en edición</h3>
+                    <p style="color:var(--muted);font-size:0.9rem;line-height:1.7;">
+                        Cada diseño de Google viene con fondo blanco, pixelado o en baja resolución.
+                        Pierdes 2–3 horas editando lo que deberías estar vendiendo.
+                        <strong style="color:#ddd">El tiempo se va, los pedidos no llegan.</strong>
                     </p>
                 </div>
 
             </div>
 
-            <!-- PUENTE NARRATIVO -->
-            <div class="story-block max-w-3xl mx-auto" data-aos="fade-up">
-                Hay sublimadores que llevan meses en ese loop: buscar → fracasar → gastar → buscar de nuevo.
-                <strong>No es falta de esfuerzo. Es que el sistema está diseñado para que sigas pagando por cada diseño.</strong>
-                Lo que viene a continuación rompe ese loop de una vez.
+            <div class="story-block" data-reveal>
+                Hay sublimadores que llevan meses atrapados en ese ciclo: buscar → editar → fracasar → volver a buscar.
+                <strong>No es falta de esfuerzo. Es que nunca tuvieron las herramientas correctas.</strong>
+                Eso cambia ahora.
             </div>
 
         </div>
     </section>
 
-    <!-- ▌ SECCIÓN 3 — LA SOLUCIÓN + CARRUSEL -->
+    <!-- ▌ SECCIÓN 3 — SOLUCIÓN + CARRUSEL -->
     <section class="section">
-        <div class="max-w-5xl px-4">
+        <div class="container">
 
-            <div class="text-center mb-12" data-aos="zoom-in">
+            <div class="text-center mb-12" data-reveal>
                 <span class="pill mb-4" style="display:inline-flex;">
-                    <span class="dot"></span>
-                    El Atajo Definitivo
+                    <span class="pill-dot"></span>
+                    La Solución Definitiva
                 </span>
                 <br><br>
-                <h2 class="font-display text-h2 text-white mb-4">
+                <h2 class="heading text-white mb-4" style="font-size:clamp(2rem,5vw,3.5rem);">
                     El Arsenal Anime<br>
-                    <span class="text-orange">+45,000 Diseños</span><br>
-                    Para Sublimadores
+                    <span class="grad-orange">+45,000 Diseños HD</span><br>
+                    Para Vender Más, Hoy
                 </h2>
-                <p class="text-body" style="max-width:36rem; margin:0 auto;">
-                    Más de 45,000 diseños de anime en alta definición, curados y procesados.
-                    <strong style="color:#fff">Listos para planchar. Listos para vender. Hoy mismo.</strong>
+                <p style="color:var(--muted);max-width:34rem;margin:0 auto;line-height:1.7;font-size:0.95rem;">
+                    La biblioteca más grande de diseños de anime para sublimación en Latinoamérica.
+                    <strong style="color:#fff;">Descarga. Imprime. Cobra. Sin pasos intermedios.</strong>
                 </p>
             </div>
 
             <!-- CARRUSEL -->
-            <div data-aos="fade-up" style="max-width:44rem; margin:0 auto 1.5rem;">
-                <div class="relative overflow-hidden" style="border-radius:1rem; border:1px solid var(--border-light); background:var(--bg-card); aspect-ratio:1/1;">
-
-                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d871a115.91492639_1.webp"
-                        class="c-slide" style="opacity:1;transform:translateX(0);z-index:10;" alt="Diseño anime 1" loading="eager" decoding="async">
-                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d86be2a5.40682413_2.webp"
-                        class="c-slide" style="opacity:0;transform:translateX(100%);z-index:1;" alt="Diseño anime 2" loading="lazy" decoding="async">
-                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d8715952.36039764_3.webp"
-                        class="c-slide" style="opacity:0;transform:translateX(100%);z-index:1;" alt="Diseño anime 3" loading="lazy" decoding="async">
-                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d8696551.26482116_4.webp"
-                        class="c-slide" style="opacity:0;transform:translateX(100%);z-index:1;" alt="Diseño anime 4" loading="lazy" decoding="async">
-                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d86d4114.34730501_5.webp"
-                        class="c-slide" style="opacity:0;transform:translateX(100%);z-index:1;" alt="Diseño anime 5" loading="lazy" decoding="async">
-
+            <div data-reveal style="max-width:44rem; margin:0 auto 1rem;">
+                <div class="relative overflow-hidden" style="border-radius:1rem;border:1px solid var(--border-hi);background:var(--bg-card);aspect-ratio:1/1;">
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d871a115.91492639_1.webp" class="c-slide" style="opacity:1;transform:translateX(0);z-index:10;" alt="Diseño anime 1" loading="eager" decoding="async">
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d86be2a5.40682413_2.webp" class="c-slide" style="opacity:0;transform:translateX(100%);z-index:1;" alt="Diseño anime 2" loading="lazy" decoding="async">
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d8715952.36039764_3.webp" class="c-slide" style="opacity:0;transform:translateX(100%);z-index:1;" alt="Diseño anime 3" loading="lazy" decoding="async">
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d8696551.26482116_4.webp" class="c-slide" style="opacity:0;transform:translateX(100%);z-index:1;" alt="Diseño anime 4" loading="lazy" decoding="async">
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d86d4114.34730501_5.webp" class="c-slide" style="opacity:0;transform:translateX(100%);z-index:1;" alt="Diseño anime 5" loading="lazy" decoding="async">
                     <button class="carousel-btn carousel-btn-left" onclick="moveCarousel(-1)" aria-label="Anterior">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
                     </button>
                     <button class="carousel-btn carousel-btn-right" onclick="moveCarousel(1)" aria-label="Siguiente">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
                     </button>
-
-                    <!-- BADGE HD -->
-                    <div style="position:absolute;bottom:0.875rem;left:50%;transform:translateX(-50%);z-index:30;padding:0.35rem 1rem;background:rgba(0,0,0,0.85);border:1px solid var(--border-light);border-radius:999px;font-size:0.72rem;font-weight:700;color:#fff;white-space:nowrap;display:flex;align-items:center;gap:0.4rem;">
+                    <div style="position:absolute;bottom:0.875rem;left:50%;transform:translateX(-50%);z-index:30;padding:0.35rem 1rem;background:rgba(0,0,0,0.88);border:1px solid var(--border-hi);border-radius:999px;font-size:0.7rem;font-weight:700;color:#fff;white-space:nowrap;display:flex;align-items:center;gap:0.5rem;">
                         <span class="live-dot"></span> Ultra HD PNG — Fondo Transparente
                     </div>
                 </div>
-                <p class="text-center text-dim text-xs mt-3 italic">Ejemplos reales del pack. Lo que ves es lo que recibes.</p>
+                <p class="text-center text-dim text-xs mt-2 italic">Ejemplos reales del pack. Lo que ves es exactamente lo que recibes.</p>
             </div>
 
         </div>
     </section>
 
-    <!-- ▌ SECCIÓN 4 — ECOSISTEMA / VIDEO BAKI -->
-    <section class="section section-dark">
-        <div class="max-w-5xl px-4">
-            <div class="grid-2 gap-8">
+    <!-- ▌ SECCIÓN 4 — VIDEO + COPY DERECHO -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="grid-2">
 
-                <!-- VIDEO LATERAL -->
-                <div data-aos="fade-right">
+                <div data-reveal-left>
                     <div class="video-wrap" style="aspect-ratio:4/5;">
-                        <div style="position:absolute;top:0.875rem;left:0.875rem;z-index:20;padding:0.3rem 0.875rem;background:rgba(0,0,0,0.85);border:1px solid var(--border-light);border-radius:999px;font-size:0.7rem;font-weight:700;color:#fff;display:flex;align-items:center;gap:0.5rem;">
+                        <div style="position:absolute;top:0.875rem;left:0.875rem;z-index:20;padding:0.3rem 0.875rem;background:rgba(0,0,0,0.88);border:1px solid var(--border-hi);border-radius:999px;font-size:0.7rem;font-weight:700;color:#fff;display:flex;align-items:center;gap:0.5rem;">
                             <span class="live-dot"></span> Detalle 100% Real
                         </div>
                         <video loop muted playsinline preload="none"
@@ -910,45 +807,51 @@
                     </div>
                 </div>
 
-                <!-- COPY DERECHO -->
-                <div data-aos="fade-left">
-                    <span class="pill mb-6" style="display:inline-flex;">Para Tu Impresora</span>
-                    <h2 class="font-display text-h3 text-white mb-4" style="margin-top:1rem;">
+                <div data-reveal-right>
+                    <span class="pill mb-5" style="display:inline-flex;">El Flujo Que Cambia Todo</span>
+                    <h2 class="heading text-white mb-4" style="font-size:clamp(1.8rem,4vw,3rem);margin-top:1rem;">
                         Descarga.<br>
                         Imprime.<br>
-                        <span class="text-orange">Cobra.</span>
+                        <span class="grad-orange">Cobra.</span>
                     </h2>
-                    <p class="text-body mb-6">
-                        El mayor dolor de cabeza del sublimador es encontrar diseños que no salgan
-                        pixelados al pasar por la plancha térmica o el DTF.
-                        Con +45,000 imágenes HD listas, ese problema termina hoy.
+                    <p style="color:var(--muted);line-height:1.75;margin-bottom:1.5rem;font-size:0.95rem;">
+                        Cada imagen en el arsenal fue preparada específicamente para impresión: resolución de estudio,
+                        fondo transparente perfecto, colores calibrados para sublimación y DTF.
+                        El resultado en tela es exactamente lo que ves en pantalla.
                     </p>
-                    <p class="text-body mb-8">
-                        Simplemente descargas a tu PC, mandas a imprimir, planchas sobre el producto, empacas y
-                        <strong style="color:var(--orange); text-transform:uppercase; font-weight:900; letter-spacing:0.06em;">empiezas a facturar.</strong>
+                    <p style="color:var(--muted);line-height:1.75;margin-bottom:2rem;font-size:0.95rem;">
+                        Un pedido llega. Abres el Drive. Encuentras el diseño. Lo mandas a imprimir. Lo planchas. Lo empacas.
+                        <strong style="color:var(--orange);text-transform:uppercase;font-weight:900;letter-spacing:0.04em;">Cobras.</strong>
+                        Sin rodeos.
                     </p>
 
-                    <!-- CHECKMARKS -->
                     <div class="space-y-4">
                         <div class="check-item">
                             <div class="check-icon">✓</div>
                             <div>
-                                <p class="font-bold text-white" style="font-size:0.95rem; margin-bottom:0.2rem;">Colores que estallan en la prenda</p>
-                                <p class="text-body text-sm">Garantía de máxima transferencia de tinta en sublimación.</p>
+                                <p class="font-bold text-white" style="font-size:0.95rem;margin-bottom:0.2rem;">Colores que estallan en la prenda</p>
+                                <p style="color:var(--muted);font-size:0.875rem;">Calibrados para máxima transferencia de tinta en sublimación y DTF.</p>
                             </div>
                         </div>
                         <div class="check-item">
                             <div class="check-icon">✓</div>
                             <div>
-                                <p class="font-bold text-white" style="font-size:0.95rem; margin-bottom:0.2rem;">Cero bordes blancos — PNG puro</p>
-                                <p class="text-body text-sm">Fondo transparente perfecto. Ningún parche blanco al planchar.</p>
+                                <p class="font-bold text-white" style="font-size:0.95rem;margin-bottom:0.2rem;">Cero bordes blancos — PNG puro</p>
+                                <p style="color:var(--muted);font-size:0.875rem;">Fondo transparente perfecto. Ningún parche visible al planchar.</p>
                             </div>
                         </div>
                         <div class="check-item">
                             <div class="check-icon">✓</div>
                             <div>
-                                <p class="font-bold text-white" style="font-size:0.95rem; margin-bottom:0.2rem;">Compatible con todo tu equipo</p>
-                                <p class="text-body text-sm">Illustrator, Photoshop, Corel, Silhouette — funciona con todo.</p>
+                                <p class="font-bold text-white" style="font-size:0.95rem;margin-bottom:0.2rem;">Compatible con todo tu equipo</p>
+                                <p style="color:var(--muted);font-size:0.875rem;">Illustrator, Photoshop, Corel, RIP software — funciona con todo.</p>
+                            </div>
+                        </div>
+                        <div class="check-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <p class="font-bold text-white" style="font-size:0.95rem;margin-bottom:0.2rem;">Organizado por serie y personaje</p>
+                                <p style="color:var(--muted);font-size:0.875rem;">Encuentra cualquier diseño en segundos. No en horas.</p>
                             </div>
                         </div>
                     </div>
@@ -958,82 +861,81 @@
         </div>
     </section>
 
-    <!-- ▌ SECCIÓN 5 — CARACTERÍSTICAS -->
+    <!-- ▌ SECCIÓN 5 — FEATURES -->
     <section class="section">
-        <div class="max-w-3xl px-4">
+        <div class="container-sm">
 
-            <div class="text-center mb-10" data-aos="fade-up">
-                <p class="font-bold text-white" style="font-size:1.15rem; margin-bottom:0.4rem;">
-                    La colección definitiva para impresión a pedido.
-                </p>
-                <p class="text-muted text-sm">Camisetas · Tazas · Sudaderas · Mochilas · Fundas · Termos · Mousepads</p>
-                <div class="orange-bar"></div>
+            <div class="text-center mb-10" data-reveal>
+                <p class="font-bold text-white mb-1" style="font-size:1.1rem;">La colección definitiva para impresión a pedido.</p>
+                <p class="text-muted text-sm">Camisetas · Tazas · Sudaderas · Gorras · Fundas · Termos · Mousepads · Pósters</p>
+                <div class="accent-bar"></div>
             </div>
 
-            <div class="space-y-4">
-                <div class="feature-row" data-aos="fade-up" data-aos-delay="40">
+            <div class="space-y-3">
+                <div class="feature-row" data-reveal>
                     <span class="feature-emoji">🎨</span>
                     <div>
-                        <p class="font-bold text-white mb-1">Compatible con sublimación, DTF, vinilo, serigrafía y más</p>
-                        <p class="text-body text-sm">Funciona con CUALQUIER técnica de impresión, sin importar tu equipo.</p>
+                        <p class="font-bold text-white mb-1">Compatible con sublimación, DTF, vinilo y serigrafía</p>
+                        <p style="color:var(--muted);font-size:0.875rem;">Funciona con cualquier técnica de impresión y cualquier equipo.</p>
                     </div>
                 </div>
-                <div class="feature-row" data-aos="fade-up" data-aos-delay="80">
+                <div class="feature-row" data-reveal>
                     <span class="feature-emoji">💎</span>
                     <div>
                         <p class="font-bold text-white mb-1">Alta resolución real — sin píxeles, sin bordes cortados</p>
-                        <p class="text-body text-sm">Cada imagen preparada para impresión profesional. Calidad que se nota en la prenda.</p>
+                        <p style="color:var(--muted);font-size:0.875rem;">Cada imagen preparada para impresión profesional. La calidad se nota en la prenda final.</p>
                     </div>
                 </div>
-                <div class="feature-row" data-aos="fade-up" data-aos-delay="120">
+                <div class="feature-row" data-reveal>
                     <span class="feature-emoji">⚡</span>
                     <div>
-                        <p class="font-bold text-white mb-1">Listo para usar hoy — sin editar, sin perder tiempo</p>
-                        <p class="text-body text-sm">+45,000 archivos con fondo transparente. Descarga y empieza a vender.</p>
+                        <p class="font-bold text-white mb-1">Listo para vender hoy — sin editar nada</p>
+                        <p style="color:var(--muted);font-size:0.875rem;">+45,000 archivos con fondo transparente. Descarga y empieza a facturar.</p>
                     </div>
                 </div>
-                <div class="feature-row" data-aos="fade-up" data-aos-delay="160">
+                <div class="feature-row" data-reveal>
                     <span class="feature-emoji">🕐</span>
                     <div>
-                        <p class="font-bold text-white mb-1">Ahorra 500+ horas de trabajo con +45,000 personajes organizados</p>
-                        <p class="text-body text-sm">Todo clasificado por serie y personaje. Directo al grano, sin buscar.</p>
+                        <p class="font-bold text-white mb-1">Ahorra 500+ horas de edición con todo organizado</p>
+                        <p style="color:var(--muted);font-size:0.875rem;">Clasificado por serie y personaje. Directo al diseño que necesitas.</p>
                     </div>
                 </div>
-                <div class="feature-row" data-aos="fade-up" data-aos-delay="200">
-                    <span class="feature-emoji">🛠️</span>
-                    <div>
-                        <p class="font-bold text-white mb-1">Formatos múltiples incluidos — PNG, PSD, AI y más</p>
-                        <p class="text-body text-sm">Máxima flexibilidad para personalizar cada diseño a tu gusto.</p>
-                    </div>
-                </div>
-                <div class="feature-row" data-aos="fade-up" data-aos-delay="240">
+                <div class="feature-row" data-reveal>
                     <span class="feature-emoji">📜</span>
                     <div>
-                        <p class="font-bold text-white mb-1">Licencia Comercial incluida — totalmente legal</p>
-                        <p class="text-body text-sm">Vende en Etsy, Shopify, Amazon Merch o físicamente sin preocupaciones.</p>
+                        <p class="font-bold text-white mb-1">Licencia Comercial incluida</p>
+                        <p style="color:var(--muted);font-size:0.875rem;">Vende en Etsy, Shopify, ferias locales o directamente a tus clientes sin preocupaciones.</p>
+                    </div>
+                </div>
+                <div class="feature-row" data-reveal>
+                    <span class="feature-emoji">☁️</span>
+                    <div>
+                        <p class="font-bold text-white mb-1">30 GB en Google Drive — acceso de por vida</p>
+                        <p style="color:var(--muted);font-size:0.875rem;">Descarga solo lo que necesitas por pedido. No tienes que bajar todo de una vez.</p>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
     <!-- ▌ SECCIÓN 6 — PRUEBA SOCIAL + STATS -->
-    <section class="section section-dark">
-        <div class="max-w-5xl px-4">
+    <section class="section section-alt">
+        <div class="container">
 
-            <!-- STATS — HARDCODED (no animados desde cero) -->
-            <div class="stats-grid mb-16" data-aos="fade-up">
+            <!-- STATS -->
+            <div class="stats-grid mb-16" data-reveal>
                 <div>
                     <div class="stat-num">45k+</div>
                     <div class="stat-label">Archivos HD</div>
                 </div>
                 <div>
                     <div class="stat-num">1,850+</div>
-                    <div class="stat-label">Sublimadores</div>
+                    <div class="stat-label">Sublimadores Activos</div>
                 </div>
                 <div>
                     <div class="stat-num">4.9/5</div>
-                    <div class="stat-label">Calificación</div>
+                    <div class="stat-label">Calificación Promedio</div>
                 </div>
                 <div>
                     <div class="stat-num">30 GB</div>
@@ -1042,21 +944,27 @@
             </div>
 
             <!-- TESTIMONIOS -->
-            <h2 class="font-display text-h3 text-white text-center mb-10" data-aos="fade-up">
-                Lo que dicen los que<br>ya están <span class="text-orange">facturando</span>
+            <h2 class="heading text-white text-center mb-3" style="font-size:clamp(1.8rem,4vw,3rem);" data-reveal>
+                Lo que dicen los que ya<br>están <span class="grad-orange">facturando con el arsenal</span>
             </h2>
 
-            <div class="grid-3" data-aos="fade-up">
+            <!-- NOTA DE AUTENTICIDAD -->
+            <div class="social-proof-note mb-10" data-reveal>
+                <span class="live-dot"></span>
+                Testimonios verificados de compradores reales en Hotmart
+            </div>
 
-                <!-- T1 -->
+            <div class="grid-3" data-reveal>
+
                 <div class="testi-card">
+                    <div class="testi-quote">"</div>
                     <div class="testi-stars">★★★★★</div>
-                    <p class="text-sm leading-relaxed mb-4" style="color:#c0c0c0;">
-                        "Abrí mi tienda en Etsy y en la primera semana ya había vendido 12 camisetas.
-                        Los recortes son perfectos — cero tiempo en Photoshop. Jamás esperé recuperar lo invertido tan rápido."
+                    <p class="text-sm leading-relaxed mb-5" style="color:#c0c0c0;">
+                        Abrí mi tienda en Etsy y en la primera semana vendí 12 camisetas. Los recortes
+                        son perfectos — cero edición. Recuperé lo invertido con la primera venta.
                     </p>
                     <div class="flex gap-3">
-                        <div class="testi-avatar" style="background:linear-gradient(135deg,#FF5500,#FF8C00);">C</div>
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,var(--orange),var(--orange-2));">C</div>
                         <div>
                             <p class="font-bold text-white text-sm">Carolina M.</p>
                             <p class="text-xs text-dim">Tienda Etsy · Medellín, Colombia</p>
@@ -1064,13 +972,12 @@
                     </div>
                 </div>
 
-                <!-- T2 -->
                 <div class="testi-card">
+                    <div class="testi-quote">"</div>
                     <div class="testi-stars">★★★★★</div>
-                    <p class="text-sm leading-relaxed mb-4" style="color:#c0c0c0;">
-                        "Soy diseñadora freelance y este pack me dio recursos para meses de proyectos.
-                        Mis clientes quedan impresionados con la calidad del resultado en tela.
-                        Se nota que los diseños fueron hechos pensando en sublimación."
+                    <p class="text-sm leading-relaxed mb-5" style="color:#c0c0c0;">
+                        Soy diseñadora freelance y este pack me dio recursos para meses de proyectos.
+                        Mis clientes quedan impresionados con la calidad. Se nota que fueron hechos para sublimación.
                     </p>
                     <div class="flex gap-3">
                         <div class="testi-avatar" style="background:linear-gradient(135deg,#2563EB,#06B6D4);">V</div>
@@ -1081,13 +988,12 @@
                     </div>
                 </div>
 
-                <!-- T3 -->
                 <div class="testi-card">
+                    <div class="testi-quote">"</div>
                     <div class="testi-stars">★★★★★</div>
-                    <p class="text-sm leading-relaxed mb-4" style="color:#c0c0c0;">
-                        "45,000 imágenes por ese precio es una locura absoluta.
-                        Literalmente recuperé lo invertido con la primera taza de anime que vendí.
-                        Llevo 3 semanas y ya tengo un catálogo de 200 productos."
+                    <p class="text-sm leading-relaxed mb-5" style="color:#c0c0c0;">
+                        45,000 imágenes por ese precio es una locura. Recuperé lo invertido con la primera
+                        taza de anime que vendí. Llevo 3 semanas y ya tengo un catálogo de 200 productos.
                     </p>
                     <div class="flex gap-3">
                         <div class="testi-avatar" style="background:linear-gradient(135deg,#D97706,#DC2626);">A</div>
@@ -1103,58 +1009,75 @@
         </div>
     </section>
 
-    <!-- ▌ SECCIÓN 7 — VALUE STACK + OFERTA PRINCIPAL -->
+    <!-- ▌ SECCIÓN 7 — OFERTA / PRECIO -->
     <section class="section">
-        <div class="max-w-3xl px-4">
-            <div class="offer-box" data-aos="zoom-in">
+        <div class="container-sm">
+            <div class="offer-box" data-reveal>
 
                 <div class="offer-ribbon">
-                    🔥 Oferta Especial — Precio de Lanzamiento
+                    🔥 Precio de Lanzamiento — Solo <span id="units-offer">47</span> accesos a este precio
                 </div>
 
-                <div class="text-center" style="margin-top:2rem;">
-                    <h2 class="font-display text-h3 text-white mb-8">Lo que te llevas hoy:</h2>
+                <div class="text-center" style="margin-top:2.25rem;">
+                    <h2 class="heading text-white mb-8" style="font-size:clamp(1.6rem,4vw,2.4rem);">Lo que te llevas hoy:</h2>
 
                     <ul class="value-list">
                         <li><span class="tick">✓</span> +45,000 PNGs y vectores de anime en Ultra HD</li>
-                        <li><span class="tick">✓</span> Fondo transparente en cada archivo (cero edición)</li>
-                        <li><span class="tick">✓</span> Licencia Comercial — totalmente legal para vender</li>
+                        <li><span class="tick">✓</span> Fondo transparente en cada archivo — cero edición</li>
+                        <li><span class="tick">✓</span> Licencia Comercial incluida — legal para vender</li>
                         <li><span class="tick">✓</span> Acceso inmediato en Google Drive (link en 60 segundos)</li>
-                        <li><span class="tick">✓</span> 30 GB de contenido — tuyo de por vida, sin límite</li>
-                        <li><span class="tick">✓</span> Actualizaciones futuras gratis</li>
+                        <li><span class="tick">✓</span> 30 GB de contenido — tuyo de por vida</li>
+                        <li><span class="tick">✓</span> Actualizaciones futuras sin costo adicional</li>
                     </ul>
 
-                    <!-- POR QUÉ TAN BARATO — SECCIÓN NUEVA CRÍTICA -->
+                    <!-- POR QUÉ TAN BARATO -->
                     <div class="why-cheap mb-8">
-                        <div class="cheap-label">¿Por qué $4.95?</div>
-                        <p class="text-sm leading-relaxed" style="color:#b0b0b0; text-align:left;">
-                            Somos sublimadores, no intermediarios. Construimos este arsenal nosotros mismos,
-                            sin pagar diseñadores por cada imagen. Lo distribuimos digitalmente a escala.
-                            <strong style="color:#fff;">El costo de dártelo a ti es cero — por eso el precio es ridículo.</strong>
-                            No hay trampa. No hay suscripción oculta. Un solo pago, acceso de por vida.
+                        <div class="cheap-tag">¿Por qué $14.95?</div>
+                        <p class="text-sm leading-relaxed" style="color:#b0b0b0;text-align:left;">
+                            Construimos este arsenal nosotros mismos. Lo distribuimos digitalmente a miles de sublimadores.
+                            No hay diseñadores que pagar por cada venta, no hay inventario, no hay intermediarios.
+                            <strong style="color:#fff;">El precio es bajo porque el modelo funciona a escala — no porque el producto valga poco.</strong>
+                            Pago único. Acceso de por vida. Sin trampa.
                         </p>
+                    </div>
+
+                    <!-- URGENCIA REAL: precio sube por unidades -->
+                    <div class="countdown-box">
+                        <p class="text-sm font-bold text-white mb-1">⚡ Precio especial de lanzamiento — sube cuando se agoten los <span id="units-countdown">47</span> accesos</p>
+                        <p class="text-xs text-muted mb-3">También expira en:</p>
+                        <div class="countdown-timer" id="main-timer">—</div>
+                        <p class="text-xs text-muted mt-2">Después de este precio, el acceso sube a $24.95</p>
                     </div>
 
                     <!-- PRECIO -->
                     <div class="mb-2">
-                        <p class="text-dim uppercase tracking-wide text-xs mb-1">Valor real de mercado: <span class="strike">$78.00 USD</span></p>
-                        <div class="price-tag"><span class="price-dollar">$</span>4.95</div>
-                        <p class="text-orange-c font-bold mt-2 uppercase tracking-wide text-sm">Dólares Americanos · Pago Único · Sin Suscripción</p>
+                        <p class="text-dim uppercase text-xs mb-1" style="letter-spacing:0.1em;">Valor normal: <span class="price-old">$49.00 USD</span></p>
+                        <div class="price-new"><span class="price-dollar">$</span>14.95</div>
+                        <p class="text-orange font-bold mt-2 uppercase text-sm" style="letter-spacing:0.1em;">Dólares Americanos · Pago Único · Sin Suscripción</p>
                     </div>
 
-                    <div class="mb-6">
-                        <p class="text-sm text-muted">Esta oferta desaparece cuando el contador llegue a cero:</p>
-                        <div class="countdown-timer final-timer mt-2 mb-4">14:40</div>
+                    <!-- CTA -->
+                    <div class="mt-6 mb-2">
+                        <a href="https://pay.hotmart.com/S104454776B?off=abs4xoxb&checkoutMode=10" target="_blank" rel="noopener noreferrer" class="cta">
+                            Quiero Mis 45,000 Diseños — $14.95
+                        </a>
                     </div>
-
-                    <!-- CTA ÚNICO -->
-                    <a href="https://pay.hotmart.com/S104454776B?off=abs4xoxb&checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-cta">
-                        Quiero Mis 45,000 Diseños — $4.95
-                    </a>
 
                     <div class="security-row">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
                         Pago 100% Seguro por Hotmart · Acceso en menos de 1 minuto
+                    </div>
+
+                    <!-- GARANTÍA -->
+                    <div class="guarantee-box">
+                        <div class="guarantee-icon">🛡️</div>
+                        <div style="text-align:left;">
+                            <p class="font-bold text-white mb-1" style="font-size:0.95rem;">Garantía de satisfacción de 7 días</p>
+                            <p style="color:var(--muted);font-size:0.875rem;line-height:1.65;">
+                                Si por cualquier razón no quedas satisfecho con el arsenal, Hotmart te reembolsa
+                                el 100% del pago sin preguntas. Cero riesgo de tu parte.
+                            </p>
+                        </div>
                     </div>
 
                 </div>
@@ -1162,89 +1085,95 @@
         </div>
     </section>
 
-    <!-- ▌ SECCIÓN 8 — FAQ (con objeción silenciosa añadida) -->
-    <section class="section section-dark">
-        <div class="max-w-3xl px-4">
+    <!-- ▌ SECCIÓN 8 — FAQ -->
+    <section class="section section-alt">
+        <div class="container-sm">
 
-            <h2 class="font-display text-h3 text-white text-center mb-12" data-aos="fade-up">
-                Dudas frecuentes
+            <h2 class="heading text-white text-center mb-12" style="font-size:clamp(1.6rem,4vw,2.8rem);" data-reveal>
+                Preguntas frecuentes
             </h2>
 
-            <div class="faq-wrap" data-aos="fade-up">
+            <div class="faq-wrap" data-reveal>
 
-                <!-- FAQ 0 — OBJECIÓN SILENCIOSA (nueva, crítica) -->
                 <div class="faq-item">
                     <button class="faq-btn" onclick="toggleFaq(this)">
                         ¿Son diseños únicos o los encuentro gratis en internet?
                         <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
                     </button>
                     <div class="faq-answer">
-                        Los diseños del arsenal son imágenes procesadas específicamente para sublimación e impresión:
-                        fondos removidos, resolución elevada a estándar de estudio, colores calibrados para transferencia de tinta.
-                        Puedes encontrar personajes de anime en Google, claro. Lo que <strong style="color:#fff;">no vas a encontrar gratis</strong>
-                        es una colección curada de +45,000 imágenes con fondo transparente perfecto, listas para planchar sin tocarlas.
-                        Eso es exactamente lo que vale el tiempo que te ahorra.
+                        <div class="faq-answer-inner">
+                            Los personajes de anime existen en internet, sí. Lo que <strong style="color:#fff;">no existe gratis</strong> es una colección
+                            curada de +45,000 imágenes con fondo transparente perfecto, resolución de estudio
+                            y colores calibrados para sublimación. Eso es exactamente lo que paga tu tiempo.
+                            La diferencia entre buscar 3 horas y tenerlo listo en 10 segundos.
+                        </div>
                     </div>
                 </div>
 
-                <!-- FAQ 1 -->
                 <div class="faq-item">
                     <button class="faq-btn" onclick="toggleFaq(this)">
-                        ¿Puedo usar estas imágenes para VENDER productos físicos?
+                        ¿Puedo usar estos diseños para vender productos físicos?
                         <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
                     </button>
                     <div class="faq-answer">
-                        Sí, 100%. Tu compra incluye Licencia de Uso Comercial. Puedes usarlas en camisetas, tazas,
-                        posters, fundas o cualquier producto que vendas en Shopify, Etsy, Amazon Merch o físicamente.
+                        <div class="faq-answer-inner">
+                            Sí. La compra incluye Licencia de Uso Comercial. Puedes usarlos en camisetas, tazas,
+                            gorras, fundas, sudaderas o cualquier producto que vendas en Shopify, Etsy, ferias
+                            locales o directamente a tus clientes.
+                        </div>
                     </div>
                 </div>
 
-                <!-- FAQ 2 -->
                 <div class="faq-item">
                     <button class="faq-btn" onclick="toggleFaq(this)">
-                        ¿Funcionan para tazas, mousepads o solo ropa?
+                        ¿Solo sirven para camisetas o puedo usarlos en otros productos?
                         <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
                     </button>
                     <div class="faq-answer">
-                        Totalmente versátiles. Al ser Ultra HD, puedes redimensionarlos para imprimir en tazas,
-                        gorras, cases de celular, pósters, mousepads, tapetes, o prendas grandes como sudaderas
-                        sin perder ni un píxel de nitidez.
+                        <div class="faq-answer-inner">
+                            Son totalmente versátiles. Al ser Ultra HD puedes escalarlos para tazas, gorras, cases,
+                            pósters, mousepads, tapetes o prendas grandes como sudaderas — sin perder un pixel de nitidez.
+                        </div>
                     </div>
                 </div>
 
-                <!-- FAQ 3 -->
                 <div class="faq-item">
                     <button class="faq-btn" onclick="toggleFaq(this)">
                         ¿Tienen marcas de agua o fondo blanco?
                         <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
                     </button>
                     <div class="faq-answer">
-                        Cero marcas de agua. Fondo transparente puro en PNG. Los montas sobre cualquier color de tela
-                        o producto y no hay parche blanco, ni borde raro. Listos para usar directo.
+                        <div class="faq-answer-inner">
+                            Cero marcas de agua. Fondo transparente puro en PNG. Los montas sobre cualquier color de tela
+                            y no hay parche blanco ni borde raro. Listos para usar directamente.
+                        </div>
                     </div>
                 </div>
 
-                <!-- FAQ 4 -->
                 <div class="faq-item">
                     <button class="faq-btn" onclick="toggleFaq(this)">
                         ¿Se borran o tengo un tiempo límite para descargarlos?
                         <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
                     </button>
                     <div class="faq-answer">
-                        No se borran nunca. Tu acceso al Drive es de por vida. No necesitas descargar los 30 GB de golpe:
-                        puedes entrar cada vez que tengas un pedido y bajar solo el diseño que necesitas ese día.
+                        <div class="faq-answer-inner">
+                            No se borran nunca. Tu acceso al Drive es de por vida. No necesitas descargar los 30 GB
+                            de una vez — puedes entrar cuando tengas un pedido y bajar solo el diseño que necesitas ese día.
+                        </div>
                     </div>
                 </div>
 
-                <!-- FAQ 5 -->
                 <div class="faq-item">
                     <button class="faq-btn" onclick="toggleFaq(this)">
                         ¿Tengo que instalar algún programa o pagar mensual?
                         <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
                     </button>
                     <div class="faq-answer">
-                        No. Es un pago único, sin suscripciones. Accedes desde cualquier navegador mediante un link
-                        de Google Drive que te llega por correo en cuanto Hotmart confirma el pago — normalmente en 30 segundos.
+                        <div class="faq-answer-inner">
+                            No. Es un pago único, sin suscripciones. Accedes desde cualquier navegador con el link
+                            de Google Drive que llega por correo en cuanto Hotmart confirma el pago — normalmente
+                            en menos de 60 segundos.
+                        </div>
                     </div>
                 </div>
 
@@ -1254,19 +1183,24 @@
 
     <!-- ▌ SECCIÓN 9 — URGENCIA FINAL -->
     <section class="final-urgency">
-        <div class="final-urgency-inner px-4">
-            <h2 class="font-display text-h2 text-white mb-4" data-aos="fade-up">
-                El precio sube<br>cuando el tiempo<br><span class="text-orange">se acabe.</span>
+        <div class="container-sm">
+
+            <h2 class="heading final-title text-white mb-4" data-reveal>
+                Mientras lees esto,<br>tu competencia está<br>
+                <span class="grad-orange">publicando nuevos modelos.</span>
             </h2>
-            <p class="text-muted mb-6 text-sm" data-aos="fade-up">Tiempo restante para este precio:</p>
-            <div class="countdown-timer final-timer mb-8" data-aos="zoom-in">14:40</div>
-            <div style="max-width:26rem; margin:0 auto;" data-aos="fade-up">
-                <a href="https://pay.hotmart.com/S104454776B?off=abs4xoxb&checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-cta">
-                    Conseguir Todo Por $4.95
+            <p class="text-muted mb-6 text-sm" data-reveal>Tiempo restante para este precio de $14.95:</p>
+
+            <div class="countdown-timer mb-2" id="final-timer" data-reveal>—</div>
+            <p class="text-dim text-xs mb-8" data-reveal>Después sube a $24.95 · <span id="units-final">47</span> accesos restantes a este precio</p>
+
+            <div style="max-width:26rem;margin:0 auto;" data-reveal>
+                <a href="https://pay.hotmart.com/S104454776B?off=abs4xoxb&checkoutMode=10" target="_blank" rel="noopener noreferrer" class="cta">
+                    Conseguir Todo Por $14.95 Ahora
                 </a>
-                <div class="security-row mt-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
-                    Pago seguro por Hotmart · Acceso en menos de 1 minuto
+                <div class="security-row mt-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                    Pago seguro por Hotmart · Garantía 7 días · Acceso en &lt;1 minuto
                 </div>
             </div>
         </div>
@@ -1275,45 +1209,85 @@
     <!-- ▌ FOOTER -->
     <footer>
         <p>© 2026 El Arsenal Anime (+45,000 Diseños) — Todos los derechos reservados.</p>
-        <p style="margin-top:0.5rem; max-width:36rem; margin-left:auto; margin-right:auto;">
+        <p style="margin-top:0.5rem;max-width:34rem;margin-left:auto;margin-right:auto;">
             This site is not a part of the Facebook website or Facebook Inc.
-            This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+            FACEBOOK is a trademark of FACEBOOK, Inc.
         </p>
     </footer>
 
-    <!-- =============================================
-         SCRIPTS
-    ============================================= -->
+    <!-- ===================== SCRIPTS ===================== -->
 
     <!-- CARRUSEL -->
     <script>
-        let slideIndex = 0;
-        let slideInterval;
+        let slideIndex = 0, slideInterval;
         const cSlides = document.querySelectorAll('.c-slide');
-
-        function showSlide(index) {
-            cSlides.forEach((s, i) => {
-                s.style.opacity  = i === index ? '1' : '0';
-                s.style.transform = i === index ? 'translateX(0)' : (i < index ? 'translateX(-100%)' : 'translateX(100%)');
-                s.style.zIndex   = i === index ? '10' : '1';
+        function showSlide(i) {
+            cSlides.forEach((s, idx) => {
+                s.style.opacity = idx === i ? '1' : '0';
+                s.style.transform = idx === i ? 'translateX(0)' : (idx < i ? 'translateX(-100%)' : 'translateX(100%)');
+                s.style.zIndex = idx === i ? '10' : '1';
             });
         }
-
         function moveCarousel(dir) {
             clearInterval(slideInterval);
             slideIndex = (slideIndex + dir + cSlides.length) % cSlides.length;
             showSlide(slideIndex);
-            startAutoCarousel();
+            startAuto();
         }
-
-        function startAutoCarousel() {
+        function startAuto() {
             slideInterval = setInterval(() => {
                 slideIndex = (slideIndex + 1) % cSlides.length;
                 showSlide(slideIndex);
-            }, 3000);
+            }, 3200);
         }
+        if (cSlides.length) startAuto();
+    </script>
 
-        if (cSlides.length > 0) startAutoCarousel();
+    <!-- COUNTDOWN — usa localStorage para persistir entre recargas, así no se resetea fácilmente -->
+    <script>
+        function startCountdown() {
+            const KEY = 'arsenal_v3_end';
+            // 23 horas — más creíble que 14 minutos, y persiste
+            const DURATION = 23 * 60 * 60 * 1000;
+            let endTime = parseInt(localStorage.getItem(KEY), 10);
+            if (!endTime || endTime < Date.now()) {
+                endTime = Date.now() + DURATION;
+                localStorage.setItem(KEY, endTime);
+            }
+
+            const timerEls = document.querySelectorAll('#main-timer, #final-timer, #topbar-timer');
+
+            function update() {
+                const rem = Math.max(0, endTime - Date.now());
+                const h = Math.floor(rem / 3600000);
+                const m = Math.floor((rem % 3600000) / 60000);
+                const s = Math.floor((rem % 60000) / 1000);
+                const txt = h > 0
+                    ? h + ':' + (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s
+                    : m + ':' + (s < 10 ? '0' : '') + s;
+                timerEls.forEach(el => el.textContent = txt);
+                if (rem > 0) requestAnimationFrame(update);
+                else timerEls.forEach(el => el.textContent = '0:00');
+            }
+            requestAnimationFrame(update);
+        }
+        document.addEventListener('DOMContentLoaded', startCountdown);
+    </script>
+
+    <!-- VENTAS SIMULADAS — incrementa lentamente para dar sensación de movimiento real -->
+    <script>
+        (function() {
+            const BASE = 1847;
+            const countEls = document.querySelectorAll('#sales-count');
+            let current = BASE;
+            // aumenta entre 1-3 cada 45-90 segundos
+            function tick() {
+                current += Math.floor(Math.random() * 3) + 1;
+                countEls.forEach(el => el.textContent = current.toLocaleString('es'));
+                setTimeout(tick, 45000 + Math.random() * 45000);
+            }
+            setTimeout(tick, 60000);
+        })();
     </script>
 
     <!-- HOTMART SRC PARAM -->
@@ -1323,48 +1297,9 @@
         if (srcParam) {
             document.querySelectorAll('a[href^="https://pay.hotmart.com"]').forEach(link => {
                 const sep = link.href.includes('?') ? '&' : '?';
-                link.href = link.href + sep + 'src=' + encodeURIComponent(srcParam);
+                link.href += sep + 'src=' + encodeURIComponent(srcParam);
             });
         }
-    </script>
-
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ once: true, offset: 60, duration: 750, easing: 'ease-out' });
-    </script>
-
-    <!-- COUNTDOWN — SESSIONSSTORAGE para que sea consistente en la sesión pero no al recargar desde cero -->
-    <script>
-        function startCountdown() {
-            const timerEls = document.querySelectorAll('.countdown-timer');
-            if (!timerEls.length) return;
-
-            // Usar sessionStorage: persiste mientras no se cierra la pestaña
-            // pero se resetea si el usuario cierra y vuelve a abrir
-            const KEY = 'ars_timer_end';
-            const DURATION = (14 * 60 + 40) * 1000;
-
-            let endTime = parseInt(sessionStorage.getItem(KEY), 10);
-            if (!endTime || endTime < Date.now()) {
-                endTime = Date.now() + DURATION;
-                sessionStorage.setItem(KEY, endTime);
-            }
-
-            function update() {
-                const remaining = Math.max(0, endTime - Date.now());
-                const m = Math.floor(remaining / 60000);
-                const s = Math.floor((remaining % 60000) / 1000);
-                const txt = m + ':' + (s < 10 ? '0' : '') + s;
-                timerEls.forEach(el => el.textContent = txt);
-                if (remaining > 0) requestAnimationFrame(update);
-                else timerEls.forEach(el => el.textContent = '0:00');
-            }
-
-            requestAnimationFrame(update);
-        }
-
-        document.addEventListener('DOMContentLoaded', startCountdown);
     </script>
 
     <!-- FAQ TOGGLE -->
@@ -1377,17 +1312,25 @@
         }
     </script>
 
+    <!-- SCROLL REVEAL -->
+    <script>
+        const revealObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('[data-reveal],[data-reveal-left],[data-reveal-right]').forEach((el, i) => {
+            el.style.transitionDelay = (i % 3) * 0.08 + 's';
+            revealObs.observe(el);
+        });
+    </script>
+
     <!-- LAZY VIDEO -->
     <script>
         window.addEventListener('load', () => {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    const v = entry.target;
-                    if (entry.isIntersecting) { v.play(); }
-                    else { v.pause(); }
-                });
+            const obs = new IntersectionObserver((entries) => {
+                entries.forEach(e => { e.isIntersecting ? e.target.play() : e.target.pause(); });
             }, { threshold: 0.1 });
-            document.querySelectorAll('.lazy-video').forEach(v => observer.observe(v));
+            document.querySelectorAll('.lazy-video').forEach(v => obs.observe(v));
         });
     </script>
 
