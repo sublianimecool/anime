@@ -806,12 +806,12 @@
         /* Inline video preview grid */
         .media-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
+            grid-template-columns: 1fr;
+            gap: 16px;
             max-width: 720px;
             margin: 40px auto 0;
         }
-        @media(min-width:640px){ .media-grid { grid-template-columns: repeat(3,1fr); } }
+        @media(min-width:640px){ .media-grid { grid-template-columns: 1.4fr 1fr; } }
         .media-cell {
             border-radius: 12px;
             overflow: hidden;
@@ -850,6 +850,119 @@
         }
         .step h3 { font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--white); margin-bottom: 8px; }
         .step p { color: var(--muted); font-size: 0.84rem; line-height: 1.55; }
+
+        /* ── HERO VIDEO ── */
+        .hero-video-wrap {
+            margin: 35px auto;
+            max-width: 720px;
+            aspect-ratio: 16 / 9;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+            background: #000;
+        }
+        .hero-video-wrap video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ── CAROUSEL STYLES ── */
+        .carousel-container {
+            position: relative;
+            max-width: 680px;
+            margin: 40px auto;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            background: var(--ink-soft);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            padding: 8px;
+        }
+        .carousel-viewport {
+            position: relative;
+            aspect-ratio: 1 / 1;
+            border-radius: 18px;
+            overflow: hidden;
+            background: #000;
+        }
+        .c-slide {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .carousel-btn:hover {
+            background: var(--red);
+            border-color: var(--red);
+            transform: translateY(-50%) scale(1.05);
+        }
+        .carousel-btn-left {
+            left: 16px;
+        }
+        .carousel-btn-right {
+            right: 16px;
+        }
+        .carousel-badge {
+            position: absolute;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            padding: 8px 20px;
+            background: rgba(8, 6, 13, 0.85);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 100px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .carousel-dot-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--red);
+            animation: pulse-dot 1.5s infinite ease-in-out;
+        }
+        @keyframes pulse-dot {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.3); opacity: 0.6; }
+        }
+        .carousel-caption {
+            text-align: center;
+            margin-top: 12px;
+            font-size: 0.84rem;
+            color: var(--muted);
+        }
     </style>
 </head>
 <body>
@@ -879,6 +992,13 @@
         <p class="hero-sub">
             PNG transparentes en 300 DPI, organizados por carpetas, compatibles con sublimación, DTF y vinilo. <strong>Sin buscar en Google. Sin perder horas. Sin fondos blancos.</strong>
         </p>
+
+        <!-- Video Hero (Camisetas3mod) -->
+        <div class="hero-video-wrap">
+            <video loop muted playsinline preload="none" poster="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/Camisetas3mod_t79kiq.jpg">
+                <source src="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/Camisetas3mod_t79kiq">
+            </video>
+        </div>
 
         <a href="https://pay.hotmart.com/S104454776B?off=abs4xoxb&checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-primary" onclick="fbq('track','InitiateCheckout')">
             <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
@@ -922,12 +1042,6 @@
         <p class="section-desc">No renders de stock. No imágenes robadas de Pinterest. Esto es lo que tus clientes verán en la taza que te acaban de pedir.</p>
 
         <div class="media-grid">
-            <div class="media-cell fade-up">
-                <video loop muted playsinline preload="none" poster="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/Camisetas3mod_t79kiq.jpg">
-                    <source src="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/Camisetas3mod_t79kiq">
-                </video>
-                <div class="media-cell-label">Playeras DTF</div>
-            </div>
             <div class="media-cell fade-up">
                 <video loop muted playsinline preload="none" poster="https://res.cloudinary.com/daijidw3t/video/upload/v1777496850/Baki_2mod_abhuia.jpg">
                     <source src="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/v1777496850/Baki_2mod_abhuia">
@@ -1027,6 +1141,32 @@
         </div>
         <h2 class="display section-h2">Todo lo que incluye<br><em>el vault</em></h2>
         <p class="section-desc">Un solo link de Google Drive. Acceso permanente. Sin descargar los 30 GB de golpe. Entra desde el cel cuando llega un pedido y descarga solo lo que vas a planchar.</p>
+
+        <!-- Carrusel de Diseños -->
+        <div class="carousel-container fade-up">
+            <div class="carousel-viewport">
+                <!-- Imágenes -->
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d871a115.91492639_1.webp" class="c-slide" style="opacity:1; transform:translateX(0); z-index:10;" alt="Diseño 1" decoding="async">
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d86be2a5.40682413_2.webp" class="c-slide" style="opacity:0; transform:translateX(100%); z-index:1;" alt="Diseño 2" loading="lazy" decoding="async">
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d8715952.36039764_3.webp" class="c-slide" style="opacity:0; transform:translateX(100%); z-index:1;" alt="Diseño 3" loading="lazy" decoding="async">
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d8696551.26482116_4.webp" class="c-slide" style="opacity:0; transform:translateX(100%); z-index:1;" alt="Diseño 4" loading="lazy" decoding="async">
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d86d4114.34730501_5.webp" class="c-slide" style="opacity:0; transform:translateX(100%); z-index:1;" alt="Diseño 5" loading="lazy" decoding="async">
+
+                <!-- Controles -->
+                <button onclick="moveCarousel(-1)" class="carousel-btn carousel-btn-left" aria-label="Anterior">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left" style="width:24px; height:24px;"><path d="m15 18-6-6 6-6" /></svg>
+                </button>
+                <button onclick="moveCarousel(1)" class="carousel-btn carousel-btn-right" aria-label="Siguiente">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right" style="width:24px; height:24px;"><path d="m9 18 6-6-6-6" /></svg>
+                </button>
+
+                <!-- Etiqueta Flotante Inferior -->
+                <div class="carousel-badge">
+                    <span class="carousel-dot-indicator"></span> Ultra HD PNG
+                </div>
+            </div>
+            <p class="carousel-caption">Desliza para ver algunos de los diseños reales incluidos en el vault</p>
+        </div>
 
         <div class="features-grid">
             <div class="feat-card fade-up">
@@ -1458,12 +1598,45 @@
 
     // ── Lazy video play on scroll ──
     window.addEventListener('load', () => {
-        const vids = document.querySelectorAll('.media-cell video');
+        const vids = document.querySelectorAll('video');
         const vidObs = new IntersectionObserver((entries) => {
             entries.forEach(e => { e.isIntersecting ? e.target.play() : e.target.pause(); });
         }, { threshold: 0.15 });
         vids.forEach(v => vidObs.observe(v));
     });
+
+    // ── LÓGICA DEL CARRUSEL (No bloqueante) ──
+    let slideIndex = 0;
+    let slideInterval;
+    const cSlides = document.querySelectorAll('.c-slide');
+
+    function showSlide(index) {
+        cSlides.forEach((s, i) => {
+            s.style.opacity = i === index ? '1' : '0';
+            s.style.transform = i === index ? 'translateX(0)' : (i < index ? 'translateX(-100%)' : 'translateX(100%)');
+            s.style.zIndex = i === index ? '10' : '1';
+            if (i === index && s.hasAttribute('loading')) s.removeAttribute('loading');
+        });
+    }
+
+    function moveCarousel(dir) {
+        clearInterval(slideInterval);
+        slideIndex = (slideIndex + dir + cSlides.length) % cSlides.length;
+        showSlide(slideIndex);
+        startAutoCarousel();
+    }
+
+    function startAutoCarousel() {
+        slideInterval = setInterval(() => {
+            slideIndex = (slideIndex + 1) % cSlides.length;
+            showSlide(slideIndex);
+        }, 2500);
+    }
+
+    if (cSlides.length > 0) {
+        showSlide(slideIndex);
+        startAutoCarousel();
+    }
 
     // ── Track CTA clicks ──
     document.querySelectorAll('a[href*="hotmart"]').forEach(link => {
